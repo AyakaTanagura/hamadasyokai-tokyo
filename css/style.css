@@ -1,0 +1,552 @@
+    @charset "utf-8";
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td ,html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-color: #fff;
+	margin-left:auto;
+	margin-right: auto;
+	max-width: 512px;
+	box-shadow: 0 0 8px gray;
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+/*---------------------------
+ リンクホバー
+---------------------------*/
+
+a img {
+  transition: filter 0.2s ease;
+}
+
+a:hover img {
+  filter: brightness(1.1);
+}
+
+/*---------------------------
+ 各余白
+---------------------------*/
+.p-20{
+    padding: 20px;
+}
+
+.mb-14{
+    margin-bottom: 14px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+
+.py-40{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.mt-20{
+    margin-top: 20px;
+}
+
+/*----------------
+ アライメント
+----------------*/
+.t_center {
+	text-align: center;
+}
+
+/*---------------------------
+ヘッダー
+---------------------------*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 20px;
+}
+.header img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.header_left img {
+  max-width: 130px;
+}
+.header_right .tel img {
+  max-width: 160px;
+}
+.header_right .line img {
+  max-width: 100px;
+}
+
+
+/*---------------------------
+買取実績
+---------------------------*/
+
+.results-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.results-title img {
+  max-width: 100%;
+  height: auto;
+}
+
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.results-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section-arrow {
+  width: 100%;
+  text-align: center;
+  margin: 24px 0 -8px; /* 下のセクションに少し被せたい場合 */
+  background: #E5E4D9;
+}
+
+.section-arrow img {
+  width: 100%;
+  max-width: 512px; /* デザイン幅に合わせる */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+
+/*---------------------------
+買取商品例
+---------------------------*/
+.item-title img{
+    width: 100%;
+    max-width: 260px; /* ← デザイン上の理想サイズ */
+    height: auto;
+    display: inline-block;
+}
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.items img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+section.item{
+    background: #E5E4D9;
+}
+
+/*---------------------------
+お悩み
+---------------------------*/
+.problem{
+  background-image: url("/images/problem_bg.webp");
+  background-repeat: cover;
+  background-size: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+.problem-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.problem-title img {
+    width: 100%;
+    max-width: 450px; /* ← デザイン上の理想サイズ */
+    height: auto;
+}
+
+.problems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 8px;
+}
+
+.problems-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*---------------------------
+特徴
+---------------------------*/
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.feature-card.orange{
+  border: 3px solid #FE7114;
+}
+.feature-card.brown{
+  border: 3px solid #986540;
+}
+
+.feature-title {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  font-size:24px;
+}
+
+.orange .feature-title {
+  background: #FE7114;
+}
+
+.brown .feature-title {
+  background: #986540;
+}
+
+.feature-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.feature-text {
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #282828;
+}
+
+/*---------------------------
+CTA
+---------------------------*/
+
+.cta-card{
+  background-image: url("/images/cta_bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 16px;
+  border-radius: 8px;
+  border: #184F38 3px solid;
+}
+
+.cta-title h3{
+  width: 100%;
+  max-width: 300px;
+  display:block;
+  margin: 0 auto;
+  margin-top: -40px;
+}
+
+.cta-illust{
+  padding: 0px 14px;
+}
+
+/*---------------------------
+ポイント
+---------------------------*/
+.point{
+  background: #D1F2FF;
+  border-top: #184F38 3px solid;
+}
+
+.point-text {
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #184F38;
+}
+
+.cta-2 {
+  background: #D1F2FF;
+}
+/*---------------------------
+CTA
+---------------------------*/
+.voice {
+  padding: 40px 16px;
+  background: #ABDCB0;
+  color: #184F38;
+  font-weight: bold;
+}
+
+.voice-illust {
+  background: #D1F2FF;
+}
+
+.voice-illust img{
+  display: block;
+}
+
+.voice-card {
+  max-width: 680px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  border: 4px solid #2f6b4f;
+}
+
+.voice-image {
+  position: relative;
+  margin-bottom: 16px;
+  z-index:0;
+}
+
+.voice-image img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.voice-arrow {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  margin: -40px 0 -28px;
+}
+
+.voice-arrow img {
+  width: 60px;
+}
+
+.voice-info {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  font-size: 14px;
+}
+
+.voice-info li {
+  margin-bottom: 6px;
+}
+
+.voice-comment {
+  background: #f4f4f4;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.voice-info {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+}
+
+.voice-info li {
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* 共通アイコン */
+.voice-info li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* 人アイコン */
+.voice-info li.user::before {
+  background-image: url("../images/icon-user.svg");
+}
+
+/* 家アイコン */
+.voice-info li.layout::before {
+  background-image: url("../images/icon-home.svg");
+}
+
+.voice-cards{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/*---------------------------
+買取の流れ
+---------------------------*/
+.step {
+  background-image: url("/images/step_bg.webp");
+  background-repeat: cover;
+  background-size: auto;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.step-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.step-title img {
+  width: 100%;
+  max-width: 360px;
+  /* ← デザイン上の理想サイズ */
+  height: auto;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 0 8px;
+}
+
+/*---------------------------
+よくある質問
+---------------------------*/
+.faq {
+  background-color: #EEF6FF;
+}
+
+.faq-title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.faq-title img {
+  width: 100%;
+  max-width: 260px;
+  /* ← デザイン上の理想サイズ */
+  height: auto;
+}
+
+.faq-inner {
+  max-width: 512px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  margin-bottom: 16px;
+}
+
+.faq-question {
+  width: 100%;
+  background: #2f63b8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 48px 16px 16px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  position: relative;
+  cursor: pointer;
+}
+
+.faq-icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.faq-answer {
+  background: #fff;
+  border-radius: 8px;
+  padding: 0 16px;
+  margin-top: 8px;
+
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(-6px);
+
+  transition:
+    max-height 0.4s ease,
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* 開いた状態 */
+.faq-item.is-open .faq-answer {
+  padding: 16px;
+  max-height: 300px;
+  /* 十分大きめに */
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-item.is-open .faq-answer {
+  display: block;
+}
+
+.faq-item.is-open .faq-icon {
+  content: "−";
+}
+
+/*---------------------------
+追従CTA
+---------------------------*/
+.cta-fixed {
+  position: fixed;
+  bottom: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 512px;
+
+  display: flex;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.cta-fixeds{
+  display: flex;
+  align-items: end;
+}
+
+.cta-fixed-title{
+padding: 10px 20px 0px;
+}
+
+.cta-fixeds-item img{
+  display: block;
+}
+
+.content-area{
+  padding-bottom: 120px;
+}
