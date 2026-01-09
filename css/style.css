@@ -539,6 +539,10 @@ CTA
   align-items: end;
 }
 
+.cta-fixeds-item{
+  width: 50%;
+}
+
 .cta-fixed-title{
 padding: 10px 20px 0px;
 }
