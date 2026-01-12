@@ -23,14 +23,24 @@
     <meta name="twitter:image" content="https://ecoshika.jp/tokyo/images/ogp.png">
     <!-- favicon -->
     <link rel="icon" href="/favicon.ico">
-
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MZCXWNSG');</script>
+	<!-- End Google Tag Manager -->
 </head>
 <body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MZCXWNSG"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
     <header>
         <!---------------------------
         ヘッダー
         ---------------------------->
-        <div class="header">
+        <div class="header" id="free">
             <div class="header_left">
                 <a href="/"><img src="./images/ecoshika-logo.webp" alt="全部買取対応｜出張費・査定費0円の無料買取サービス【30％UPキャンペーン中】"></a>
             </div><!-- / .header_left -->
@@ -44,7 +54,7 @@
         <!---------------------------
         ファーストビュー
         ---------------------------->
-        <section class="fv">
+        <section class="fv" id="campaign">
             <h1><img src="./images/fv.webp" alt="買取30％UPキャンペーン中！全部買取ります。買取件数4万件突破。出張費・査定費0円。現金買取、査定後すぐに現金お渡し。不用品処分、引越しや整理で出た大型品も対応。遺品整理、安心の対応を迅速にお届け。"></h1>
         </section>
         <!---------------------------
@@ -79,7 +89,7 @@
         <!---------------------------
         買取商品例
         ---------------------------->
-        <section class="item p-20 py-40">
+        <section class="step p-20 py-40" id="items">
             <!-- タイトル画像 -->
             <div class="item-title mb-20">
                 <h2 class="t_center"><img src="./images/item_title.webp" alt="もちろんどんなモノでもOK！"></h2>
@@ -155,7 +165,7 @@
                 </p>
                 </div>
 
-                <div class="feature-card brown">
+                <div class="feature-card brown" id="estate">
                 <div class="feature-title">遺品・生前整理</div>
                 <img src="./images/feature_image_02.webp" alt="遺品・生前整理">
                 <p class="feature-text">
@@ -173,7 +183,7 @@
                 </p>
                 </div>
 
-                <div class="feature-card brown">
+                <div class="feature-card brown" id="cleanup">
                 <div class="feature-title">ゴミ屋敷の整理</div>
                 <img src="./images/feature_image_04.webp" alt="ゴミ屋敷の整理">
                 <p class="feature-text">
@@ -187,7 +197,7 @@
         <!---------------------------
         CTA
         ---------------------------->
-        <section class="cta p-20 py-40">
+        <section class="cta p-20 py-40" id="same-day">
             <div class="cta-card">
                 <!-- タイトル画像 -->
                 <div class="cta-title mb-20 t_center">
@@ -291,7 +301,7 @@
             <img src="./images/voice_title_bg.webp" alt="">
         </div>
 
-        <section class="voice p-20 py-40">
+        <section class="voice p-20 py-40" id="voice">
             <!-- タイトル画像 -->
             <div class="voice-title mb-20 t_center">
                 <h2><img src="./images/voice_title.webp" alt="実際にご利用されたお客様"></h2>
@@ -391,7 +401,7 @@
         <!---------------------------
         買取の流れ
         ---------------------------->
-        <section class="step p-20 py-40">
+        <section class="step p-20 py-40" id="flow">
             <!-- タイトル画像 -->
             <div class="step-title mb-20">
                 <h2><img src="./images/step_title.webp" alt="出張費・査定費0円　簡単出張買取4ステップ"></h2>
